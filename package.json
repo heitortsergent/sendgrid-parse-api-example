@@ -5,6 +5,9 @@
     "node": "0.10.x",
     "npm": "1.2.x"
   },
+  "scripts": {
+    "start": "node app.js"
+  },
   "main": "app.js",
   "description": "Example application using the SendGrid Parse API.",
   "dependencies": {

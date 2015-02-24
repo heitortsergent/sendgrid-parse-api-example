@@ -1,0 +1,43 @@
+[2015/02/25 05:17:39 UTC] [INFO] (ngrok/log.Info:89) Reading configuration file /ngrok/ngrok.yml
+[2015/02/25 05:17:39 UTC] [INFO] (ngrok/log.(*PrefixLogger).Info:60) [client] Trusting root CAs: [assets/client/tls/ngrokroot.crt]
+[2015/02/25 05:17:39 UTC] [INFO] (ngrok/log.(*PrefixLogger).Info:60) [view] [web] Serving web interface on 0.0.0.0:4040
+[2015/02/25 05:17:39 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [view] [term] Waiting for update
+[2015/02/25 05:17:39 UTC] [INFO] (ngrok/log.Info:89) Checking for update
+[2015/02/25 05:17:41 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [ctl:d0b8057] New connection to: 96.126.125.171:443
+[2015/02/25 05:17:41 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [ctl:d0b8057] Writing message: {"Type":"Auth","Payload":{"Version":"2","MmVersion":"1.7","User":"rTz5WboOOSMqVrFudJ1C","Password":"","OS":"linux","Arch":"amd64","ClientId":""}}
+[2015/02/25 05:17:43 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [ctl:d0b8057] Waiting to read message
+[2015/02/25 05:17:43 UTC] [EROR] (ngrok/log.Error:97) Error while checking for update: Post https://api.equinox.io/1/Updates: x509: failed to load system roots and no roots provided
+[2015/02/25 05:17:45 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [ctl:d0b8057] Reading message with length: 120
+[2015/02/25 05:17:45 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [ctl:d0b8057] Read message {"Type":"AuthResp","Payload":{"Version":"2","MmVersion":"1.7","ClientId":"e78f5a2105c3de8d5ac6a52acdc0f32b","Error":""}}
+[2015/02/25 05:17:45 UTC] [INFO] (ngrok/log.(*PrefixLogger).Info:60) [client] Authenticated with server, client id: e78f5a2105c3de8d5ac6a52acdc0f32b
+[2015/02/25 05:17:45 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [view] [term] Waiting for update
+[2015/02/25 05:17:45 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [ctl:d0b8057] Writing message: {"Type":"ReqTunnel","Payload":{"ReqId":"641044401d6f59f1","Protocol":"http+https","Hostname":"","Subdomain":"sendgrid-parse","HttpAuth":"","RemotePort":0}}
+[2015/02/25 05:17:45 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [ctl:d0b8057] Waiting to read message
+[2015/02/25 05:17:45 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [ctl:d0b8057] Reading message with length: 32
+[2015/02/25 05:17:45 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [ctl:d0b8057] Read message {"Type":"ReqProxy","Payload":{}}
+[2015/02/25 05:17:45 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [ctl:d0b8057] Waiting to read message
+[2015/02/25 05:17:46 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [pxy:538a3db5] New connection to: 96.126.125.171:443
+[2015/02/25 05:17:46 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [pxy:538a3db5] Writing message: {"Type":"RegProxy","Payload":{"ClientId":"e78f5a2105c3de8d5ac6a52acdc0f32b"}}
+[2015/02/25 05:17:46 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [ctl:d0b8057] Reading message with length: 128
+[2015/02/25 05:17:46 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [ctl:d0b8057] Read message {"Type":"NewTunnel","Payload":{"ReqId":"641044401d6f59f1","Url":"http://sendgrid-parse.ngrok.com","Protocol":"http","Error":""}}
+[2015/02/25 05:17:46 UTC] [INFO] (ngrok/log.(*PrefixLogger).Info:60) [client] Tunnel established at http://sendgrid-parse.ngrok.com
+[2015/02/25 05:17:46 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [ctl:d0b8057] Waiting to read message
+[2015/02/25 05:17:46 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [view] [term] Waiting for update
+[2015/02/25 05:17:46 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [ctl:d0b8057] Reading message with length: 130
+[2015/02/25 05:17:46 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [ctl:d0b8057] Read message {"Type":"NewTunnel","Payload":{"ReqId":"641044401d6f59f1","Url":"https://sendgrid-parse.ngrok.com","Protocol":"https","Error":""}}
+[2015/02/25 05:17:46 UTC] [INFO] (ngrok/log.(*PrefixLogger).Info:60) [client] Tunnel established at https://sendgrid-parse.ngrok.com
+[2015/02/25 05:17:46 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [ctl:d0b8057] Waiting to read message
+[2015/02/25 05:17:46 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [view] [term] Waiting for update
+[2015/02/25 05:17:47 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [pxy:538a3db5] Waiting to read message
+[2015/02/25 05:18:05 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [ctl:d0b8057] Writing message: {"Type":"Ping","Payload":{}}
+[2015/02/25 05:18:06 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [ctl:d0b8057] Reading message with length: 28
+[2015/02/25 05:18:06 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [ctl:d0b8057] Read message {"Type":"Pong","Payload":{}}
+[2015/02/25 05:18:06 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [ctl:d0b8057] Waiting to read message
+[2015/02/25 05:18:25 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [ctl:d0b8057] Writing message: {"Type":"Ping","Payload":{}}
+[2015/02/25 05:18:26 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [ctl:d0b8057] Reading message with length: 28
+[2015/02/25 05:18:26 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [ctl:d0b8057] Read message {"Type":"Pong","Payload":{}}
+[2015/02/25 05:18:26 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [ctl:d0b8057] Waiting to read message
+[2015/02/25 05:18:45 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [ctl:d0b8057] Writing message: {"Type":"Ping","Payload":{}}
+[2015/02/25 05:18:46 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [ctl:d0b8057] Reading message with length: 28
+[2015/02/25 05:18:46 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [ctl:d0b8057] Read message {"Type":"Pong","Payload":{}}
+[2015/02/25 05:18:46 UTC] [DEBG] (ngrok/log.(*PrefixLogger).Debug:56) [ctl:d0b8057] Waiting to read message
