@@ -52,6 +52,24 @@ You can now adjust the code in [routes/inbound.js](https://github.com/sendgrid/s
 
 ### Development
 
+#### Using azk
+
+If you have [azk](http://www.azk.io/) installed, you can just set your SendGrid credentials by doing:
+
+```
+$ mv .env.example .env
+```
+
+And then editing the `.env` file. After that, run:
+
+```
+$ azk start
+```
+
+The ngrok URL is set to [sendgrid-parse.ngrok.com](sendgrid-parse.ngrok.com). You can change it inside your `Azkfile.js`. After that, follow step 4 to set up SendGrid's Parse Webhook.
+
+If you don't have azk, follow the instructions below from the beginning.
+
 #### 1. Set ENV vars 
 
 ```
@@ -103,8 +121,6 @@ Wait 1-48 hours. (It can take up to 48 hours for MX records to propagate around 
 Send an email to `inbound@the-hostname-you-setup.com` and this app will now parse it. 
 
 It will deliver an email back to you with an attachment containing the content of the webhook data. The contents will look something [like this](https://gist.github.com/scottmotte/6642578/raw/d66d703abdd45addec9e8ff7aa92214db7dda326/gistfile1.txt).
-
-
 
 ## Alternatives
 
